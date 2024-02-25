@@ -1,3 +1,8 @@
+"""
+To demonstrate how to recalculate VWAP using an update equation
+
+"""
+
 import time
 
 price = 100
@@ -13,11 +18,12 @@ while True:
 
     print("vwap: {}".format(vwap_price))
 
-    price += 1
-    size += 1
-
     last_vwap_price = vwap_price
     last_vwap_size = last_vwap_size + size
 
     time.sleep(1)
+
+    # new price and size
+    price += 1
+    size += 1
 

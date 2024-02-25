@@ -7,7 +7,3 @@ import requests as http
 
 response = http.get("https://en.wikipedia.org/wiki/Main_Page")
 print(response.text)
-
-# write content to file
-with open('c:/temp/sample.html', 'wb') as f:
-    f.write(response.content)
